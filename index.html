@@ -93,6 +93,23 @@
             max-width: 800px;
         }
 
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 1.5rem;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
         .hero-tag {
             display: inline-block;
             padding: 0.5rem 1.5rem;
@@ -415,6 +432,7 @@
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
         <div class="hero-content">
+            <img src="z7909670450413_8269c1c0bf1cda93e5476cca1d59c243.jpg" alt="Vũ Duy Tiến Thành" class="profile-img">
             <div class="hero-tag">Digital Portfolio</div>
             <h1 class="hero-title">Vũ Duy Tiến Thành</h1>
             <p class="hero-subtitle">Sinh viên Y Dược & Đam mê Công nghệ số</p>
